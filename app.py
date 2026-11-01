@@ -91,7 +91,7 @@ app_mode = st.sidebar.radio("モード選択", ["応募者入力画面", "管理
 if app_mode == "応募者入力画面":
     st.markdown("""
     <div class="day-banner">
-        🔴 【選考当日】思考・表現力セッション 応募者入力フォーム<br>
+        【選考当日】思考・表現力セッション 応募者入力フォーム<br>
         <span style="font-size: 0.9em; font-weight: normal;">以下のフォームに必要事項をご入力の上、「提出する」ボタンを押してください。</span>
     </div>
     """, unsafe_allow_html=True)
