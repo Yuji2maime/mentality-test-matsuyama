@@ -128,11 +128,7 @@ if app_mode == "応募者入力画面":
 
 # 2. 管理者ログイン画面
 elif app_mode == "管理者ログイン (当日用)":
-    st.markdown("""
-    <div class="day-banner">
-        🔐 管理者ログイン（当日・面接官用）
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown("<div class='day-banner'>管理者ログイン (当日・面接官用)</div>", unsafe_allow_html=True)
     
     password_input = st.text_input("管理者パスワードを入力してください", type="password")
     
@@ -142,7 +138,7 @@ elif app_mode == "管理者ログイン (当日用)":
     if password_input == ADMIN_PASSWORD:
         st.success("認証に成功しました。")
         
-        st.markdown("### 📊 応募者一覧・評価レポート管理")
+        st.markdown("### 応募者一覧・評価レポート管理")
         
         try:
             response = supabase.table("mentality_applicants_matsuyama").select("*").execute()
